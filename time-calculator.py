@@ -8,6 +8,7 @@ def add_time(start, duration, optional=None):
     duration_time = re.findall(r'\d+', duration)
     duration_hour = int(duration_time[0])
     duration_minute = int(duration_time[1])
+
     
     # AM/PM
     meridiem = re.search(r'\b(AM|PM)\b', start).group()
